@@ -11,7 +11,7 @@ $verdana: "Verdana", "Geneva", sans-serif;
 
 $main-font: em(16px);
 $main-font-family: "RobotoRegular", $helvetica;
-$main-line: em(24px);
+$main-line: 2;
 
 $main-color: #000;
 $main-bg-color: #fff;
@@ -22,6 +22,7 @@ $main-a-hover: #ff0000;
 * {
 	padding: 0;
 	margin: 0;
+	outline: none !important;
 }
 
 html {
@@ -41,26 +42,6 @@ body {
 
 a { color: $main-a; }
 a:hover { color: $main-a-hover; }
-:focus { outline: none; } 
-
-//vertical rhythm
-
-/*$base-font-size: 16px !global;
-$base-line-height: 24px !global; 
-$rhythm-unit: "em" !global; 
- 
-@include establish-baseline;
-
-p, img, iframe {
-	@include margin-trailer;
-}
-
-h1 { @include adjust-font-size-to(3.157em); margin:0 !important; }
-h2 { @include adjust-font-size-to(2.369em); }
-h3 { @include adjust-font-size-to(1.777em); }
-h4 { @include adjust-font-size-to(1.333em); }
-h5 { @include adjust-font-size-to(1em); }
-h6 { @include adjust-font-size-to(0.75em); }*/
 
 .hidden, [hidden] {
 	display: none !important;
@@ -70,6 +51,6 @@ h6 { @include adjust-font-size-to(0.75em); }*/
     max-width: 100%;
     height: auto;
     display: block;
-	margin: auto;
+		margin: auto;
 }
 
